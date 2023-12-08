@@ -8,3 +8,16 @@ console.log(textIn);
 const textOut = `This is waht we know about avokado: ${textIn}.\nCreated on ${Date.now()}`;
 fs.writeFileSync("./txt/output.txt", textOut);
 console.log("File written!");
+
+// "readFileSync" - синхронная версия.
+// "readFile" - асинхронная версия
+
+/*
+const fs = require("fs")
+
+// Non-blocking code
+fs.readFile("input.txt", "utf-8", (err,data)=>{
+    console.log(data);
+});
+console.log("Reading file...");
+*/
